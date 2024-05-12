@@ -4,9 +4,9 @@ class Principal extends Controller{
     {
         parent::__construct();
     }
+
     public function index(){
-        $data = $this->model->getPrueba();
-        $this->views->getView('principal', 'index', $data);
+        $this->views->getView('principal', 'index');
     }
 }
 ?>

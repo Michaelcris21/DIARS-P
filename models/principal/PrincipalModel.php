@@ -1,7 +1,12 @@
 <?php
-class PrincipalModel{
+class PrincipalModel extends Query{
+    private $con;
+    public function __construct() {
+        parent:: __construct();
+    }
     public function getPrueba(){
-        return 'Mensaje desde el modelo';
+        
+        return $this->select("SELECT * FROM usuarios WHERE id = 1");
     }
 }
 ?>
