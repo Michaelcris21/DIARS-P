@@ -57,7 +57,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-3 col-sm-6">
 					<div class="check-content">
-						<p>Arrival Date</p>
+						<p>Fecha de llegada</p>
 						<div class="form-group">
 							<div class="input-group date" id="datetimepicker-1">
 								<i class="flaticon-calendar"></i>
@@ -72,7 +72,7 @@
 
 				<div class="col-lg-3 col-sm-6">
 					<div class="check-content">
-						<p>Departure Date</p>
+						<p>Fecha de salida</p>
 						<div class="form-group">
 							<div class="input-group date" id="datetimepicker-2">
 								<i class="flaticon-calendar"></i>
@@ -88,7 +88,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-sm-6">
 							<div class="check-content">
-								<p>Adults</p>
+								<p>Adultos</p>
 								<div class="form-group">
 									<select name="adult" class="form-content">
 										<option value="1">01</option>
@@ -102,7 +102,7 @@
 						</div>
 						<div class="col-lg-6 col-sm-6">
 							<div class="check-content">
-								<p>Children</p>
+								<p>Niños</p>
 								<div class="form-group">
 									<select name="adult" class="form-content">
 										<option value="1">01</option>
@@ -119,7 +119,7 @@
 				<div class="col-lg-3">
 					<div class="check-btn check-content mb-0">
 						<button class="default-btn">
-							Check Availability
+							Revisar Disponibilidad
 							<i class="flaticon-right"></i>
 						</button>
 					</div>
@@ -134,8 +134,8 @@
 <section class="explore-area pt-170 pb-100">
 	<div class="container">
 		<div class="section-title">
-			<span>Explore</span>
-			<h2>We are cool to give you pleasure</h2>
+			<span>Explora</span>
+			<h2>Somos geniales para darte placer</h2>
 		</div>
 		<div class="row align-items-center">
 			<div class="col-lg-6">
@@ -145,12 +145,12 @@
 			</div>
 			<div class="col-lg-6">
 				<div class="explore-content ml-30">
-					<h2>As much as comfort want to get from us everything</h2>
+					<h2>Estamos aquí para brindarte la máxima comodidad y satisfacer todas tus necesidades</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet reprehenderit ratione ad perspiciatis repudiandae iste ipsam temporibus sit quo! Incidunt, necessitatibus fugiat ut dignissimos pariatur odit natus ipsum! Obcaecati iste ipsam temporibus sit quo! Incidunt, necessitatibus Obcaecati iste ipsam temporibus Lorem ipsum dolor sit amet consectetur.</p>
 
 					<p>Konin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim ad minim veniam, quis nostrud exercitation. dolor sit amet, consectetur adipisicing quis nostrud exercitation Lorem ipsum dolor sit amet consectetur.</p>
 					<a href="about.html" class="default-btn">
-						explore More
+						Explorar más
 						<i class="flaticon-right"></i>
 					</a>
 				</div>
@@ -164,15 +164,15 @@
 <section class="facilities-area pb-60">
 	<div class="container">
 		<div class="section-title">
-			<span>Facilities</span>
-			<h2>Giving entirely awesome</h2>
+			<span>Facilidades</span>
+			<h2>Dando totalmente impresionante</h2>
 		</div>
 		<div class="row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="single-facilities-wrap">
 					<div class="single-facilities">
 						<i class="facilities-icon flaticon-pickup"></i>
-						<h3>Pick Up & Drop​</h3>
+						<h3>Servicio 1​</h3>
 						<p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
 						<a href="service-details.html" class="icon-btn">
 							<i class="flaticon-right"></i>
@@ -184,7 +184,7 @@
 				<div class="single-facilities-wrap">
 					<div class="single-facilities">
 						<i class="facilities-icon flaticon-coffee-cup"></i>
-						<h3>Welcome Drink​​​​</h3>
+						<h3>Servicio 2​</h3>
 						<p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
 						<a href="service-details.html" class="icon-btn">
 							<i class="flaticon-right"></i>
@@ -196,7 +196,7 @@
 				<div class="single-facilities-wrap">
 					<div class="single-facilities">
 						<i class="facilities-icon flaticon-garage"></i>
-						<h3>​​Parking Space</h3>
+						<h3>​Servicio 3</h3>
 						<p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
 						<a href="service-details.html" class="icon-btn">
 							<i class="flaticon-right"></i>
@@ -208,7 +208,7 @@
 				<div class="single-facilities-wrap">
 					<div class="single-facilities">
 						<i class="facilities-icon flaticon-water"></i>
-						<h3>Cold Hot & Water​</h3>
+						<h3>Servicio 4</h3>
 						<p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
 						<a href="service-details.html" class="icon-btn">
 							<i class="flaticon-right"></i>
@@ -228,10 +228,10 @@
 			<a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-btn popup-youtube">
 				<i class="flaticon-play-button"></i>
 			</a>
-			<h2><span>Incredible!</span> Are you coming today</h2>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sed obcaecati, magni excepturi, temporibus vero, inventore tenetur assumenda natus sequi labore. Voluptates eligendi dolores quod temporibus aperiam adipisci, quasi reprehenderit. Voluptates eligendi dolores quod temporibus.</p>
+			<h2><span>Increíble! </span> Ven hoy</h2>
+			<p>Descubre la comodidad y el encanto de nuestro hotel. Sumérgete en una experiencia única llena de confort y hospitalidad. ¡Te estamos esperando!</p>
 			<a href="#" class="default-btn">
-				Join Us Today
+				Únete a nosotros hoy
 				<i class="flaticon-right"></i>
 			</a>
 		</div>
@@ -247,8 +247,8 @@
 <section class="our-rooms-area pt-60 pb-100">
 	<div class="container">
 		<div class="section-title">
-			<span>Our Rooms</span>
-			<h2>Fascinating rooms & suites</h2>
+			<span>Nuestras habitaciones</span>
+			<h2>Habitaciones facinantes</h2>
 		</div>
 		<div class="tab industries-list-tab">
 			<div class="row">
@@ -257,36 +257,22 @@
 						<li class="single-rooms">
 							<img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-1.jpg" alt="Image">
 							<div class="room-content">
-								<h3>Double Room</h3>
-								<span>From $75.9/night</span>
+								<h3>Habitación simple</h3>
+								<span>A partir de S/30</span>
 							</div>
 						</li>
 						<li class="single-rooms">
 							<img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-2.jpg" alt="Image">
 							<div class="room-content">
-								<h3>Luxury Room</h3>
-								<span>From $50.9/night</span>
+								<h3>Habitacion doble</h3>
+								<span>A partir de S/40</span>
 							</div>
 						</li>
 						<li class="single-rooms">
 							<img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-3.jpg" alt="Image">
 							<div class="room-content">
-								<h3>Best Room</h3>
-								<span>From $70.9/night</span>
-							</div>
-						</li>
-						<li class="single-rooms">
-							<img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-4.jpg" alt="Image">
-							<div class="room-content">
-								<h3>Classic Room</h3>
-								<span>From $95.9/night</span>
-							</div>
-						</li>
-						<li class="single-rooms">
-							<img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/rooms/button-img-5.jpg" alt="Image">
-							<div class="room-content">
-								<h3>Budget Room</h3>
-								<span>From $95.9/night</span>
+								<h3>Habitacion matrimonial</h3>
+								<span>A partir de S/50</span>
 							</div>
 						</li>
 					</ul>
@@ -296,27 +282,17 @@
 						<div class="tabs_item">
 							<div class="our-rooms-single-img room-bg-1">
 							</div>
-							<span class="preview-item">The Preview Of Double Room</span>
+							<span class="preview-item">Vista previa de la habitacion simple</span>
 						</div>
 						<div class="tabs_item">
 							<div class="our-rooms-single-img room-bg-2">
 							</div>
-							<span class="preview-item">The Preview Of Luxury Room</span>
+							<span class="preview-item">Vista previa de la habitacion doble</span>
 						</div>
 						<div class="tabs_item">
 							<div class="our-rooms-single-img room-bg-3">
 							</div>
-							<span class="preview-item">The Preview Of Best Room</span>
-						</div>
-						<div class="tabs_item">
-							<div class="our-rooms-single-img room-bg-4">
-							</div>
-							<span class="preview-item">The Preview Of Classic Room</span>
-						</div>
-						<div class="tabs_item">
-							<div class="our-rooms-single-img room-bg-5">
-							</div>
-							<span class="preview-item">The Preview Of Budget Room</span>
+							<span class="preview-item">Vista previa de la habitacion matrimonial</span>
 						</div>
 					</div>
 				</div>
@@ -333,20 +309,20 @@
 			<div class="single-city-item owl-carousel owl-theme">
 				<div class="city-view-single-item">
 					<div class="city-content">
-						<span>The City View</span>
-						<h3>A charming view of the city town</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus fugit eligendi accusantium vel quos debitis cupiditate ducimus placeat explicabo distinctio, consectetur eos animi, a voluptate delectus. Id, explicabo saepe Consequuntur</p>
+						<span>Vistas de Otuzco</span>
+						<h3>Descubre la belleza de Otuzco desde nuestro hotel</h3>
+						<p>Nuestro hotel te ofrece una experiencia inolvidable.</p>
 
-						<p>The view onin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ad minim veniam, quis nostrud exercitation consectetur.</p>
+						<p>Ubicado en la pintoresca ciudad de Otuzco, nuestro hotel te ofrece una experiencia única.</p>
 					</div>
 				</div>
 				<div class="city-view-single-item">
 					<div class="city-content">
-						<span>The City View</span>
-						<h3>The charming view of the city</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus fugit eligendi accusantium vel quos debitis cupiditate ducimus placeat explicabo distinctio, consectetur eos animi, a voluptate delectus. Id, explicabo saepe Consequuntur</p>
+						<span>Vistas Urbanas</span>
+						<h3>La ciudad en toda su gloria</h3>
+						<p>Descubre la ciudad desde una nueva perspectiva con nuestras habitaciones con vistas urbanas.</p>
 
-						<p>The view onin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ad minim veniam, quis nostrud exercitation consectetur.</p>
+						<p>Desde la comodidad de tu habitación, podrás contemplar los rascacielos iluminados y los icónicos lugares de interés de nuestra ciudad. ¡Ven y descubre la belleza de nuestra ciudad hoy mismo!</p>
 					</div>
 				</div>
 			</div>
