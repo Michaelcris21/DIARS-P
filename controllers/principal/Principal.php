@@ -1,12 +1,14 @@
 <?php
-class Principal extends Controller{
+class Principal extends Controller
+{
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function index(){
-        $this->views->getView('principal', 'index');
+    public function index()
+    {
+        $data['title'] = 'Página principal';
+        $this->views->getView('index', $data);
     }
 }
-?>

@@ -1,12 +1,8 @@
 <?php
-class Views{
-    public function getView($ruta, $vista, $data="") {
-        if ($ruta == 'principal') {
-            $vista = 'views/' . $vista . '.php';
-        }else {
-            $vista = 'views/' . $ruta . '/'. $vista . '.php';
-        }
-        require $vista;
+class Views
+{
+    public function getView($vista, $data = "")
+    {
+        require $vista = 'views/' . $vista . '.php';
     }
 }
-?>
