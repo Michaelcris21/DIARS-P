@@ -1,17 +1,20 @@
 <?php include_once 'views/template/header-principal.php'; ?>
+
 <!-- Start Ecorik Slider Area -->
 <section class="eorik-slider-area">
 	<div class="eorik-slider owl-carousel owl-theme">
-		<div class="eorik-slider-item slider-item-bg-1">
+		<?php foreach ($data['sliders'] as $key => $slider) { ?>
+		<div class="eorik-slider-item" style="background-image: url(<?php echo RUTA_PRINCIPAL . 'assets/img/sliders/' . $slider['foto'] ?>);">
 			<div class="d-table">
 				<div class="d-table-cell">
 					<div class="container">
 						<div class="eorik-slider-text overflow-hidden one eorik-slider-text-one">
-							<h1>Relax Vacation</h1>
-							<span>Discover the place where you have fun & enjoy a lot</span>
+							<h1><?php echo $slider['titulo'] ?></h1>
+							<br><br>
+							<span><?php echo $slider['subtitulo'] ?></span>
 							<div class="slider-btn">
-								<a class="default-btn" href="#">
-									Book To Stay
+								<a class="default-btn" href="<?php echo $slider['url'] ?>">
+									Más información
 									<i class="flaticon-right"></i>
 								</a>
 							</div>
@@ -20,42 +23,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="eorik-slider-item slider-item-bg-2">
-			<div class="d-table">
-				<div class="d-table-cell">
-					<div class="container">
-						<div class="eorik-slider-text overflow-hidden two eorik-slider-text-one">
-							<h1>Take Vacations</h1>
-							<span>Discover the place where you have fun & enjoy a lot</span>
-							<div class="slider-btn">
-								<a class="default-btn" href="#">
-									Book To Stay
-									<i class="flaticon-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="eorik-slider-item slider-item-bg-3">
-			<div class="d-table">
-				<div class="d-table-cell">
-					<div class="container">
-						<div class="eorik-slider-text overflow-hidden three eorik-slider-text-one">
-							<h1>Favorite Vacation</h1>
-							<span>Discover the place where you have fun & enjoy a lot</span>
-							<div class="slider-btn">
-								<a class="default-btn" href="#">
-									Book To Stay
-									<i class="flaticon-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php }?>
 	</div>
 	<div class="white-shape">
 		<img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/home-one/slider/white-shape.png" alt="Image">
