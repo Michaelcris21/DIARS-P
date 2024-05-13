@@ -8,6 +8,7 @@ class Habitacion extends Controller
     public function index()
     {
         $data['title'] = 'Habitaciones';
+        $data['subtitle'] = 'Habitaciones con estilo';
         $this->views->getView('principal/habitacion/index', $data);
     }
 }

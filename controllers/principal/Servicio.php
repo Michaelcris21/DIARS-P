@@ -8,6 +8,7 @@ class Servicio extends Controller
     public function index()
     {
         $data['title'] = 'Servicios';
+        $data['subtitle'] = 'Nuestros servivios';
         $this->views->getView('principal/servicios/index', $data);
     }
 }

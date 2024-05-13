@@ -8,6 +8,7 @@ class Contacto extends Controller
     public function index()
     {
         $data['title'] = 'Contactos';
+        $data['subtitle'] = 'Contacténos';
         $this->views->getView('principal/contactos/index', $data);
     }
 }

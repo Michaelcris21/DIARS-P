@@ -8,6 +8,7 @@ class Blog extends Controller
     public function index()
     {
         $data['title'] = 'Blogs';
+        $data['subtitle'] = 'Entradas';
         $this->views->getView('principal/blog/index', $data);
     }
 }
