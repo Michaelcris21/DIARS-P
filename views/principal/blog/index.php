@@ -1,7 +1,6 @@
 <?php include_once 'views/template/header-principal.php'; 
 include_once 'views/template/portada.php';?>
 
-
 <section class="news-area ptb-100">
     <div class="container">
         <div class="section-title">
@@ -248,3 +247,7 @@ include_once 'views/template/portada.php';?>
 </section>
 
 <?php include_once 'views/template/footer-principal.php'; ?>
+
+</body>
+
+</html>
