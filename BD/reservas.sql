@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-05-2024 a las 06:47:12
+-- Tiempo de generación: 14-05-2024 a las 17:59:18
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -128,6 +128,15 @@ CREATE TABLE `sliders` (
   `estado` int(11) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `sliders`
+--
+
+INSERT INTO `sliders` (`id`, `titulo`, `subtitulo`, `url`, `foto`, `estado`) VALUES
+(1, 'Descubre el encanto de nuestro hotel', 'Disponibles las 24 horas durante los 7 días de la semana', 'http://localhost/reservas/', 'slider1.jpg', 1),
+(2, 'Relájate y disfruta', 'Descubre un refugio de tranquilidad y confort en nuestro hotel, donde cada detalle está pensado para tu comodidad', 'http://localhost/reservas/', 'slider2.jpg', 1),
+(3, 'Descansa y recarga energías con nosotros', 'La tranquilidad y el confort te esperan', 'http://localhost/reservas/', 'slider3.jpg', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -234,7 +243,7 @@ ALTER TABLE `reservas`
 -- AUTO_INCREMENT de la tabla `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
