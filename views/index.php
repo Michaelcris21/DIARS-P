@@ -4,51 +4,31 @@
 <section class="eorik-slider-area">
 	<div class="eorik-slider owl-carousel owl-theme">
 		<?php foreach ($data['sliders'] as $key => $slider) { ?>
-		<div class="eorik-slider-item" style="background-image: url(<?php echo RUTA_PRINCIPAL . 'assets/img/sliders/' . $slider['foto'] ?>);">
-			<div class="d-table">
-				<div class="d-table-cell">
-					<div class="container">
-						<div class="eorik-slider-text overflow-hidden one eorik-slider-text-one">
-							<h1><?php echo $slider['titulo'] ?></h1>
-							<br><br>
-							<span><?php echo $slider['subtitulo'] ?></span>
-							<div class="slider-btn">
-								<a class="default-btn" href="<?php echo $slider['url'] ?>">
-									Más información
-									<i class="flaticon-right"></i>
-								</a>
+			<div class="eorik-slider-item" style="background-image: url(<?php echo RUTA_PRINCIPAL . 'assets/img/sliders/' . $slider['foto'] ?>);">
+				<div class="d-table">
+					<div class="d-table-cell">
+						<div class="container">
+							<div class="eorik-slider-text overflow-hidden one eorik-slider-text-one">
+								<h1><?php echo $slider['titulo'] ?></h1>
+								<br><br>
+								<span><?php echo $slider['subtitulo'] ?></span>
+								<div class="slider-btn">
+									<a class="default-btn" href="<?php echo $slider['url'] ?>">
+										Más información
+										<i class="flaticon-right"></i>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<?php }?>
+		<?php } ?>
 	</div>
 	<div class="white-shape">
 		<img src="<?php echo RUTA_PRINCIPAL . 'assets/principal'; ?>/img/home-one/slider/white-shape.png" alt="Image">
 	</div>
-	<div class="social-link">
-		<ul>
-			<li>
-				<a href="#">
-					<i class="bx bxl-facebook"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="bx bxl-twitter"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="bx bxl-linkedin"></i>
-				</a>
-			</li>
-		</ul>
-	</div>
 </section>
-<!-- End Ecorik Slider Area -->
 
 <!-- Start Check Area -->
 <div class="check-area mb-minus-70">
@@ -85,34 +65,15 @@
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<div class="row">
-						<div class="col-lg-6 col-sm-6">
-							<div class="check-content">
-								<p>Adultos</p>
-								<div class="form-group">
-									<select name="adult" class="form-content">
-										<option value="1">01</option>
-										<option value="2">02</option>
-										<option value="3">03</option>
-										<option value="4">04</option>
-										<option value="5">05</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-sm-6">
-							<div class="check-content">
-								<p>Niños</p>
-								<div class="form-group">
-									<select name="adult" class="form-content">
-										<option value="1">01</option>
-										<option value="2">02</option>
-										<option value="3">03</option>
-										<option value="4">04</option>
-										<option value="5">05</option>
-									</select>
-								</div>
-							</div>
+					<div class="check-content">
+						<div class="form-group">
+							<label for="habitacion" class="form-label">Habitaciones</label>
+							<select class="select-auto" name="habitacion" id="habitacion" style="width: 100%;">
+								<option value="">Seleccionar</option>
+								<?php foreach ($data['habitaciones'] as $habitacion) { ?>
+									<option value="<?php echo $habitacion['id']; ?>"><?php echo $habitacion['estilo']; ?></option>
+								<?php } ?>
+							</select>
 						</div>
 					</div>
 				</div>
@@ -848,6 +809,8 @@
 <!-- End News Area -->
 
 <?php include_once 'views/template/footer-principal.php'; ?>
+
+<script src="<?php echo RUTA_PRINCIPAL . '/assets/principal/js/pages/index.js'; ?>"></script>
 
 </body>
 

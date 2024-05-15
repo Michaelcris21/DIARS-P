@@ -10,9 +10,6 @@
 	jQuery(window).on('load', function() {
 		$('.preloader').fadeOut();
 	});
-
-	// Nice Select JS
-	$('select').niceSelect();
 	
 	// Header Sticky JS
 	$(window).on('scroll', function() {
