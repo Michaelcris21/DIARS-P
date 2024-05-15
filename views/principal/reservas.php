@@ -9,6 +9,9 @@ include_once 'views/template/portada.php'; ?>
         </div>
         <div class="row">
             <div class="col-lg-12">
+                <input type="text" id="f_llegada" value="<?php echo $data['disponible']['f_llegada']; ?>">
+                <input type="text" id="f_salida" value="<?php echo $data['disponible']['f_salida']; ?>">
+                <input type="text" id="habitacion" value="<?php echo $data['disponible']['habitacion']; ?>">
                 <div id='calendar'></div>
             </div>
         </div>
