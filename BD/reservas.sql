@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-05-2024 a las 07:35:31
+-- Tiempo de generación: 15-05-2024 a las 21:39:11
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -120,6 +120,13 @@ CREATE TABLE `reservas` (
   `id_usuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `reservas`
+--
+
+INSERT INTO `reservas` (`id`, `monto`, `num_transaccion`, `cod_reserva`, `fecha_ingreso`, `fecha_salida`, `fecha_reserva`, `descripcion`, `estado`, `metodo`, `facturacion`, `id_habitacion`, `id_usuario`) VALUES
+(1, 300.00, '123456', '654321', '2024-05-15', '2024-06-15', '2024-05-15 16:54:47', 'PRUEBA', 1, 1, 'vacio', 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -162,6 +169,13 @@ CREATE TABLE `usuarios` (
   `estado` int(11) NOT NULL DEFAULT 1,
   `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `clave`, `token`, `verify`, `rol`, `foto`, `estado`, `fecha`) VALUES
+(1, 'MICHAEL ESCOBEDO', 'escobedomichael921@gmail.com', '1234', NULL, 0, 1, NULL, 1, '2024-05-15 16:54:11');
 
 --
 -- Índices para tablas volcadas
@@ -244,7 +258,7 @@ ALTER TABLE `habitaciones`
 -- AUTO_INCREMENT de la tabla `reservas`
 --
 ALTER TABLE `reservas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `sliders`
@@ -256,7 +270,7 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas
