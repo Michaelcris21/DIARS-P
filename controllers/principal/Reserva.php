@@ -16,7 +16,7 @@ class Reserva extends Controller
             if (empty($f_llegada) || empty($f_salida) || empty($habitacion)) {
                 header('Location: ' . RUTA_PRINCIPAL . '?respuesta=warning');
             } else {
-                $data['reserva'] = $this->model->getDisponible($f_llegada, $f_salida, $habitacion);
+                $reserva = $this->model->getDisponible($f_llegada, $f_salida, $habitacion);
                 $data['title'] = 'Reservas';
                 $data['subtitle'] = 'Verificar Disponibilidad';
                 $data['disponible'] = [
@@ -24,14 +24,24 @@ class Reserva extends Controller
                     'f_salida' => $f_salida,
                     'habitacion' => $habitacion
                 ];
+                if (empty($reserva)) {
+                    $data['mensaje'] = 'DISPONIBLE';
+                    $data['tipo'] = 'success';
+                } else {
+                    $data['mensaje'] = 'NO DISPONIBLE';
+                    $data['tipo'] = 'danger';
+                }
+
+
+
                 $this->views->getView('principal/reservas', $data);
             }
         }
     }
 
-    public function listar($datos)
+    public function listar($parametros)
     {
-        $array = explode(',', $datos);
+        $array = explode(',', $parametros);
         $f_llegada = (!empty($array[0])) ? $array[0] : null;
         $f_salida = (!empty($array[1])) ? $array[1] : null;
         $habitacion = (!empty($array[2])) ? $array[2] : null;
@@ -43,12 +53,14 @@ class Reserva extends Controller
                 $datos['title'] = 'OCUPADO';
                 $datos['start'] = $reservas[$i]['fecha_ingreso'];
                 $datos['end'] = $reservas[$i]['fecha_salida'];
+                $datos['color'] = '#dc3545';
                 array_push($results, $datos);
             }
             $data['id'] = $habitacion;
             $data['title'] = 'COMPROBANDO';
             $data['start'] = $f_llegada;
             $data['end'] = $f_salida;
+            $data['color'] = '#ffc107';
             array_push($results, $data);
             echo json_encode($results, JSON_UNESCAPED_UNICODE);
         }
