@@ -33,7 +33,7 @@
 <!-- Start Check Area -->
 <div class="check-area mb-minus-70">
 	<div class="container">
-		<form class="check-form" id="formulario" action="<?php echo RUTA_PRINCIPAL . 'principal/verify' ?>" >
+		<form class="check-form" id="formulario" action="<?php echo RUTA_PRINCIPAL . 'reserva/verify' ?>">
 			<div class="row align-items-center">
 				<div class="col-lg-3 col-sm-6">
 					<div class="check-content">
@@ -41,7 +41,7 @@
 						<div class="form-group">
 							<div class="input-group date" id="datetimepicker-1">
 								<i class="flaticon-calendar"></i>
-								<input type="text" class="form-control" id="f_llegada" name="f_llegada" value="<?php echo date('Y-m-d'); ?>" >
+								<input type="text" class="form-control" id="f_llegada" name="f_llegada" value="<?php echo date('Y-m-d'); ?>">
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-th"></i>
 								</span>
@@ -808,7 +808,7 @@
 </section>
 <!-- End News Area -->
 
-<?php include_once 'views/template/footer-principal.php'; 
+<?php include_once 'views/template/footer-principal.php';
 
 if (!empty($_GET['respuesta']) /*&& $_GET['respuesta'] == 'warning'*/) { ?>
 
