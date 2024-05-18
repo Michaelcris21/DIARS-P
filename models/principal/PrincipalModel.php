@@ -15,6 +15,6 @@ class PrincipalModel extends Query
 
     public function getHabitaciones()
     {
-        return $this->selectAll("SELECT * FROM habitaciones");
+        return $this->selectAll("SELECT * FROM habitaciones WHERE estado = 1");
     }
 }

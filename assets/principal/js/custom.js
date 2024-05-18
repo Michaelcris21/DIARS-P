@@ -1,6 +1,10 @@
 (function($) {
 	'use strict';
-		
+	
+	$( '.select-auto' ).select2( {
+        theme: 'bootstrap-5'
+    } );
+
 	// Mean Menu JS
 	jQuery('.mean-menu').meanmenu({ 
 		meanScreenWidth: "991"
