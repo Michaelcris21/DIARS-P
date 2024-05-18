@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-05-2024 a las 21:39:11
+-- Tiempo de generación: 18-05-2024 a las 04:58:44
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -160,6 +160,8 @@ INSERT INTO `sliders` (`id`, `titulo`, `subtitulo`, `url`, `foto`, `estado`) VAL
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nombre` varchar(150) NOT NULL,
+  `apellido` varchar(150) NOT NULL,
+  `usuario` varchar(50) NOT NULL,
   `correo` varchar(150) NOT NULL,
   `clave` varchar(150) NOT NULL,
   `token` varchar(100) DEFAULT NULL,
@@ -174,8 +176,11 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `clave`, `token`, `verify`, `rol`, `foto`, `estado`, `fecha`) VALUES
-(1, 'MICHAEL ESCOBEDO', 'escobedomichael921@gmail.com', '1234', NULL, 0, 1, NULL, 1, '2024-05-15 16:54:11');
+INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `usuario`, `correo`, `clave`, `token`, `verify`, `rol`, `foto`, `estado`, `fecha`) VALUES
+(1, 'MICHAEL ESCOBEDO', '', '', 'escobedomichael921@gmail.com', '1234', NULL, 0, 1, NULL, 1, '2024-05-15 16:54:11'),
+(2, 'DANIEL', 'DANIEL', 'DANIEL', 'DANIEL@GMAIL.COM', '$2y$10$nJjre.ScPRf1lQl7yD7PYeh2u0RmmK74gUiUYAWHDRtkEVWAzr8FG', NULL, 0, 2, NULL, 1, '2024-05-18 02:06:43'),
+(3, 'DANIEL', 'DANIEL', 'DANIEL', 'DANIEL@GMAIL.COM', '$2y$10$rCohkgx1ZbMlgiFVxvj0CeWeV3zuekMoEhyzcMQkm2GZCaucpI/hy', NULL, 0, 2, NULL, 1, '2024-05-18 02:42:16'),
+(4, 'josue', 'josue', 'josue', 'josue@gmail.com', '$2y$10$djO5TiepbC/mc.VXn/ak5OSmeDV3IEIwBgJvBLBAIDc7wPUwlNvw.', NULL, 0, 2, NULL, 1, '2024-05-18 02:44:50');
 
 --
 -- Índices para tablas volcadas
@@ -270,7 +275,7 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
