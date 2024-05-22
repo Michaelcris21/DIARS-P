@@ -106,6 +106,10 @@ function validarCampos($campos)
   }
   return true;
 }
+//REDIRECT
+function redirect($ruta){
+  header('Location: ' . $ruta);
+}
 //CREAR SESIONES
 function crearSession($datos){
   $_SESSION['id_usuario'] = $datos['id_usuario'];
