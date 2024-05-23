@@ -1,4 +1,10 @@
 <?php
+require_once 'vendor/autoload.php';
+// SDK de Mercado Pago
+
+use MercadoPago\Client\Preference\PreferenceClient;
+use MercadoPago\MercadoPagoConfig;
+
 class Reserva extends Controller
 {
     public function __construct()
@@ -26,6 +32,8 @@ class Reserva extends Controller
                     'habitacion' => $habitacion
                 ];
                 if (empty($reserva)) {
+                    //CREAR SESION DE LA HABITACION
+                    $_SESSION['reserva'] = $data['disponible'];
                     $data['mensaje'] = 'DISPONIBLE';
                     $data['tipo'] = 'success';
                 } else {
@@ -68,8 +76,69 @@ class Reserva extends Controller
         die();
     }
 
-    public function pendiente(){
+    public function pendiente()
+    {
         $data['title'] = 'Reserva pendiente';
+        $data['habitacion'] = [];
+        if (!empty($_SESSION['reserva'])) {
+            $data['habitacion'] = $this->model->getHabitacion($_SESSION['reserva']['habitacion']);
+        }
+        //MERCADO PAGO
+        // Agrega credenciales
+        MercadoPagoConfig::setAccessToken(ACCES_TOKEN);
+        $client = new PreferenceClient();
+
+        $back_urls = array(
+            "success" => RUTA_PRINCIPAL . 'reserva/success',
+            "failure" => RUTA_PRINCIPAL . 'reserva/failure',
+            "pending" => RUTA_PRINCIPAL . 'reserva/pending'
+        );
+
+        //CAPTURAR LA CANTIDAD
+        $fecha1 = new DateTime($_SESSION['reserva']['f_llegada']);
+        $fecha2 = new DateTime($_SESSION['reserva']['f_salida']);
+
+        $cantidad = $fecha2->diff($fecha1);
+
+        $precio = floatval($data['habitacion']['precio']);
+
+        $preference = $client->create([
+            "items" => [
+                [
+                    "title" => $data['habitacion']['estilo'],
+                    "quantity" => $cantidad->d,
+                    "currency_id" => MONEDA_MP,
+                    "unit_price" => $precio
+                ]
+            ],
+            'back_urls' => $back_urls
+        ]);
+
+        $data['preference_id'] = $preference->id;
+        $data['total'] = $cantidad->d * $precio;
         $this->views->getView('principal/clientes/reservas/pendiente', $data);
+    }
+
+    public function success()
+    {
+        echo 'success';
+        print_r($_GET);
+    }
+
+    public function failure()
+    {
+        echo 'failure';
+    }
+
+    public function pending()
+    {
+        echo 'pending';
+    }
+
+    public function registrarReserva()
+    {
+        $datos = file_get_contents('php://input');
+        $array = json_decode($datos, true);
+        print_r($array);
     }
 }
